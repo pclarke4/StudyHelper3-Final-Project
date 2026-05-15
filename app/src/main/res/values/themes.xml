@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for TaskMaster. -->
+    <style name="Theme.StudyHelper3" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/theme_primary</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/theme_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/theme_primary</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <!-- Tertiary brand color. -->
+        <item name="colorTertiary">@color/theme_tertiary</item>
+        <item name="colorOnTertiary">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/theme_background</item>
+
+        <!-- Background and Surface colors. -->
+        <item name="android:windowBackground">@color/theme_background</item>
+        <item name="colorSurface">@color/theme_surface</item>
+        <item name="colorOnSurface">@color/theme_on_surface</item>
+        <item name="colorSurfaceVariant">@color/chip_background</item>
+        <item name="colorOnSurfaceVariant">@color/theme_text_primary</item>
+
+        <!-- Error color. -->
+        <item name="colorError">@color/danger_red</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Divider and Outline. -->
+        <item name="colorOutline">@color/theme_primary</item>
+    </style>
+
+    <!-- Custom TaskMaster Styles -->
+    <style name="TaskCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/theme_surface</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="strokeColor">@color/theme_primary</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="HeadingText">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/theme_text_primary</item>
+    </style>
+
+    <style name="SecondaryText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/theme_text_secondary</item>
+    </style>
+
+    <style name="StatusBadge">
+        <item name="android:background">@color/theme_warning</item>
+        <item name="android:textColor">@color/theme_on_surface</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

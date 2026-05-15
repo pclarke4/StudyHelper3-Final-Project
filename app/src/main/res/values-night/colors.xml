@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode / Neon Gaming Theme -->
+    <color name="theme_background">#121212</color>
+    <color name="theme_surface">#1E1E1E</color>
+    <color name="theme_on_background">#FFFFFF</color>
+    <color name="theme_on_surface">#FFFFFF</color>
+
+    <color name="theme_primary">#BB86FC</color> <!-- Neon Purple -->
+    <color name="theme_secondary">#03DAC6</color> <!-- Neon Cyan -->
+    <color name="theme_tertiary">#FF00FF</color> <!-- Neon Pink -->
+    <color name="theme_success">#00FF00</color> <!-- Neon Green -->
+    <color name="theme_warning">#FFD700</color> <!-- Gold -->
+    <color name="theme_yellow">#FFD54F</color> <!-- Soft Yellow -->
+
+    <!-- Quest Style Additions (Dark Mode) -->
+    <color name="quest_card_bg">#251E2B</color> <!-- Dark Purple Tint -->
+    <color name="quest_header_text">#BB86FC</color>
+
+    <color name="theme_text_primary">#FFFFFF</color>
+    <color name="theme_text_secondary">#BDBDBD</color>
+
+    <color name="xp_bar_bg">#333333</color>
+    <color name="xp_bar_fill">#00FF00</color>
+
+    <!-- UI Components for Dark Mode -->
+    <color name="chip_background">#2C2C2E</color>
+    <color name="divider_gray">#3A3A3C</color>
+
+    <!-- Task Card Colors Dark Mode -->
+    <color name="task_card_background">#1E1E1E</color>
+    <color name="task_card_text_primary">#FFFFFF</color>
+    <color name="task_card_text_secondary">#BDBDBD</color>
+    <color name="task_card_category">#03DAC6</color>
+    <color name="task_card_due_date">#FF00FF</color>
+    <color name="task_card_chevron">#BB86FC</color>
+    <color name="task_card_stroke">#BB86FC</color>
+
+    <!-- Priority Colors Dark Mode -->
+    <color name="priority_high">#FF00FF</color> <!-- Neon Pink/Red -->
+    <color name="priority_medium">#FFD700</color> <!-- Neon Gold/Orange -->
+    <color name="priority_low">#00FF00</color> <!-- Neon Green -->
+
+    <!-- Aliases for Build Compatibility -->
+    <color name="background_light">@color/theme_background</color>
+    <color name="text_primary">@color/theme_text_primary</color>
+    <color name="text_secondary">@color/theme_text_secondary</color>
+    <color name="arcade_dark_gray">@color/theme_surface</color>
+    <color name="arcade_neon_purple">@color/theme_primary</color>
+    <color name="arcade_locked_gray">@color/theme_text_secondary</color>
+    <color name="arcade_gold">@color/theme_warning</color>
+    <color name="arcade_xp_bar_bg">@color/xp_bar_bg</color>
+    <color name="arcade_neon_cyan">@color/theme_secondary</color>
+    <color name="arcade_neon_pink">@color/theme_tertiary</color>
+    <color name="arcade_neon_green">@color/theme_success</color>
+    <color name="arcade_black">@color/theme_background</color>
+
+    <!-- Legacy / Utils -->
+    <color name="primary_purple">#BB86FC</color>
+    <color name="primary_purple_dark">#7000F2</color>
+    <color name="success_green">#00FF00</color>
+    <color name="danger_red">#FF00FF</color>
+
+    <color name="badge_gold">#FFD700</color>
+
+    <array name="subjectColors">
+        <item>#1A237E</item>
+        <item>#4A148C</item>
+        <item>#1B5E20</item>
+        <item>#E65100</item>
+        <item>#BF360C</item>
+    </array>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudyHelper3">
+
+        <activity
+            android:name=".SubjectActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".QuestionActivity"
+            android:exported="false"
+            android:label="@string/task_details"
+            android:parentActivityName=".SubjectActivity" />
+
+        <activity
+            android:name=".QuestionEditActivity"
+            android:exported="false"
+            android:label="@string/add_task"
+            android:parentActivityName=".QuestionActivity" />
+
+        <activity
+            android:name=".TimerActivity"
+            android:exported="false"
+            android:label="@string/focus_timer"
+            android:parentActivityName=".SubjectActivity" />
+
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false"
+            android:label="@string/completed_tasks"
+            android:parentActivityName=".SubjectActivity" />
+
+        <activity
+            android:name=".StatsActivity"
+            android:exported="false"
+            android:label="@string/stats"
+            android:parentActivityName=".SubjectActivity" />
+
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false"
+            android:label="@string/calendar"
+            android:parentActivityName=".SubjectActivity" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/settings"
+            android:parentActivityName=".SubjectActivity" />
+
+    </application>
+
+</manifest>

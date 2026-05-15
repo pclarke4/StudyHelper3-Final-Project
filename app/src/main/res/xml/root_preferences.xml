@@ -1,0 +1,37 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="General Settings">
+        <SwitchPreferenceCompat
+            app:key="notifications_enabled"
+            app:title="@string/notifications_toggle"
+            app:defaultValue="true" />
+
+        <SwitchPreferenceCompat
+            app:key="dark_theme"
+            app:title="@string/dark_mode_toggle"
+            app:defaultValue="false" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Focus Timer Defaults">
+        <EditTextPreference
+            app:key="daily_focus_goal"
+            app:title="@string/daily_focus_goal"
+            app:useSimpleSummaryProvider="true"
+            app:defaultValue="120" />
+
+        <ListPreference
+            app:key="reminder_time"
+            app:title="@string/reminder_time"
+            app:entries="@array/reminder_time_entries"
+            app:entryValues="@array/reminder_time_values"
+            app:defaultValue="15"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="About">
+        <Preference
+            app:title="@string/about_taskmaster"
+            app:summary="@string/version_text" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

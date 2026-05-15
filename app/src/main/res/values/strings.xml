@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TaskMaster</string>
+
+    <!-- Navigation -->
+    <string name="home">Home</string>
+    <string name="add_task">New Quest</string>
+    <string name="edit_task">Edit Quest</string>
+    <string name="update_task">Update Quest</string>
+    <string name="delete_task">Abandon Quest</string>
+    <string name="task_details">Quest Details</string>
+    <string name="focus_timer">Focus Timer</string>
+    <string name="completed_tasks">Completed Tasks</string>
+    <string name="stats">Stats</string>
+    <string name="calendar">Calendar</string>
+    <string name="settings">Settings</string>
+
+    <!-- Menu Items -->
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Labels -->
+    <string name="save_task">Start Quest</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="daily_focus_goal">Daily Focus Goal</string>
+    <string name="todays_tasks">Today\'s Quests</string>
+    <string name="task_history">Quest History</string>
+    <string name="productivity_stats">Productivity Stats</string>
+    <string name="upcoming_tasks">Upcoming Quests</string>
+    <string name="notifications">Notifications</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="reminder_time">Reminder Time</string>
+    <string name="focus_goal">Focus Goal</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="search_hint">Search quests...</string>
+    <string name="filter_status">Filter by Status</string>
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_completed">Completed</string>
+    <string name="filter_high_priority">High Priority</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_newest">Newest</string>
+    <string name="sort_priority">Priority</string>
+    <string name="sort_difficulty">Difficulty</string>
+    <string name="sort_alpha">A-Z</string>
+    <string name="no_tasks_day">No tasks for this day</string>
+    <string name="select_date">Select a date</string>
+    <string name="app_info">App Info</string>
+    <string name="about_taskmaster">About TaskMaster</string>
+    <string name="version_text">Version 1.0.0 (Phase 3)</string>
+    <string name="about_desc">TaskMaster is your ultimate productivity companion, helping you stay focused and organized.</string>
+    <string name="mock_focus_goal_value">60 minutes</string>
+    <string name="mock_reminder_time_value">15 minutes before</string>
+    <string name="dark_mode_toggle">Dark Mode Toggle</string>
+    <string name="notifications_toggle">Enable Notifications</string>
+
+    <!-- Home Screen -->
+    <string name="daily_progress">Daily Progress</string>
+    <string name="category_all">All</string>
+    <string name="category_work">Work</string>
+    <string name="category_study">Study</string>
+    <string name="category_personal">Personal</string>
+    <string name="due_today">Due Today</string>
+    <string name="mock_65_percent">65% Completed</string>
+    <string name="progress_format">%1$d%% Completed</string>
+    <string name="task_added_toast">Quest started: %1$s</string>
+    <string name="default_task_name">Quest</string>
+    <string name="task_completed">Quest completed!</string>
+    <string name="task_incomplete">Quest resumed</string>
+    <string name="mark_completed">Mark as Completed</string>
+    <string name="mark_incomplete">Mark as Incomplete</string>
+    <string name="focused_time_format">• %1$d m focused</string>
+    <string name="difficulty_level_format">Level %1$d</string>
+
+    <!-- Gamification -->
+    <string name="quest_xp_label">CURRENT QUEST XP</string>
+    <string name="level_format">LVL %1$d</string>
+    <string name="xp_format">%1$d / 100 XP</string>
+    <string name="rank_rookie">Rookie Adventurer</string>
+    <string name="rank_scout">Task Scout</string>
+    <string name="rank_grinder">XP Grinder</string>
+    <string name="rank_knight">Quest Knight</string>
+    <string name="rank_legend">Focus Legend</string>
+
+    <string name="player_profile">PLAYER PROFILE</string>
+    <string name="player_stats">PLAYER STATS</string>
+    <string name="quest_stats">QUEST STATS</string>
+    <string name="boss_goals">BOSS GOALS</string>
+    <string name="achievement_inventory">ACHIEVEMENT INVENTORY</string>
+
+    <string name="stat_quests_done">Quests Finished</string>
+    <string name="stat_focus_power">Focus Power</string>
+    <string name="stat_streak">Current Streak</string>
+
+    <string name="badge_first_quest">First Quest</string>
+    <string name="badge_streak_starter">Streak Starter</string>
+    <string name="badge_focus_warrior">Focus Warrior</string>
+    <string name="badge_boss_slayer">Boss Slayer</string>
+
+    <string name="quest_success_rate">QUEST SUCCESS RATE</string>
+    <string name="focus_sessions">FOCUS SESSIONS</string>
+    <string name="daily_focus_boss">DAILY FOCUS BOSS</string>
+    <string name="weekly_quest_challenge">WEEKLY QUEST CHALLENGE</string>
+
+    <!-- Task Form -->
+    <string name="task_title_hint">Quest Name</string>
+    <string name="description_hint">Quest Details (Steps, Notes, etc.)</string>
+    <string name="category_label">Category</string>
+    <string name="priority_label">Priority</string>
+    <string name="difficulty_label">Difficulty Level</string>
+    <string name="due_date_label">Quest Deadline</string>
+    <string name="recurring_label">Recurring Quest</string>
+    <string name="reminder_label">Set Quest Reminder</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_date_time">Schedule Quest</string>
+    <string name="title_required">Please enter a quest name</string>
+    <string name="difficulty_1">1 - Very Easy</string>
+    <string name="difficulty_2">2 - Easy</string>
+    <string name="difficulty_3">3 - Medium</string>
+    <string name="difficulty_4">4 - Hard</string>
+    <string name="difficulty_5">5 - Expert</string>
+
+    <!-- Timer Screen -->
+    <string name="focus_mode">Focus Mode</string>
+    <string name="break_mode">Break Mode</string>
+    <string name="short_break">Short Break</string>
+    <string name="long_break">Long Break</string>
+    <string name="focus_label">FOCUS</string>
+    <string name="break_label">BREAK</string>
+    <string name="short_break_label">SHORT BREAK</string>
+    <string name="long_break_label">LONG BREAK</string>
+    <string name="skip">Skip</string>
+    <string name="motivational_text">Stay focused, you\'re doing great!</string>
+    <string name="timer_initial">25:00</string>
+    <string name="mock_session_info">Session 1 of 4</string>
+    <string name="session_count_format">Session %1$d of 4</string>
+    <string name="sessions_completed_format">Sessions Completed: %1$d</string>
+    <string name="timer_demo_note">Note: Timer is shortened for demonstration purposes.</string>
+    <string name="active_task_label">Active Quest</string>
+    <string name="finish_btn">Finish</string>
+    <string name="timer_motivation_quote">Stay locked in. One session at a time.</string>
+    <string name="daily_goal_format">Daily Goal: %1$d / %2$d sessions</string>
+    <string name="mock_active_task_desc">TaskMaster Phase 2 Prototype</string>
+    <string name="mock_daily_goal_text">Daily Goal: 0 / 8 sessions</string>
+    <string name="session_finished">Session Finished!</string>
+    <string name="progress_saved">Progress saved for today!</string>
+    <string name="progress_saved_for">Progress saved for: %1$s</string>
+    <string name="no_quest_selected">General Focus Session</string>
+    <string name="choose_quest_hint">Complete a focus session to earn XP.</string>
+    <string name="xp_bonus_label">+25 XP per session</string>
+    <string name="current_mission">CURRENT MISSION</string>
+
+    <!-- Stats & History Details -->
+    <string name="history_summary">You completed %1$d quests!</string>
+    <string name="no_completed_tasks">No completed quests yet.</string>
+    <string name="mock_yesterday">Yesterday</string>
+    <string name="mock_task_completed_date">Completed Oct 24, 2:30 PM</string>
+    <string name="productivity_score">Productivity Score</string>
+    <string name="mock_score_82">82%</string>
+    <string name="tasks_done_label">Quests Done</string>
+    <string name="best_streak_label">Best Streak</string>
+    <string name="focus_time_label">Focus Time</string>
+    <string name="badges_rewards">Badges &amp; Rewards</string>
+    <string name="goals_progress">Goals Progress</string>
+    <string name="weekly_tasks_goal">Weekly Quests Goal</string>
+    <string name="badge_focus_starter">Focus Starter</string>
+    <string name="badge_streak_builder">Streak Builder</string>
+    <string name="badge_task_finisher">Quest Finisher</string>
+    <string name="mock_tasks_completed_count">12</string>
+    <string name="mock_sessions_count">8</string>
+    <string name="sessions_label">Sessions</string>
+    <string name="mock_streak_count">5 Days</string>
+    <string name="streak_label">Streak</string>
+    <string name="mock_focus_hours">4.5h</string>
+
+    <!-- Calendar View -->
+    <string name="mock_month_oct">October 2023</string>
+    <string name="due_today_label">Due Today</string>
+    <string name="mock_due_time">5:00 PM</string>
+    <string name="today">Today</string>
+    <string name="mock_today_date">Wednesday, Oct 25</string>
+    <string name="mock_task_ui_proto">Finish UI Prototype</string>
+    <string name="mock_due_today_5pm">Due: Today, 5:00 PM</string>
+    <string name="mock_task_study_exam">Study for Exam</string>
+    <string name="mock_due_tomorrow_10am">Due: Tomorrow, 10:00 AM</string>
+    <string name="mock_task_groceries">Weekly Groceries</string>
+    <string name="mock_due_oct27_4pm">Due: Oct 27, 4:00 PM</string>
+    <string name="date_mon">23 Mon</string>
+    <string name="date_tue">24 Tue</string>
+    <string name="date_wed">25 Wed</string>
+    <string name="date_thu">26 Thu</string>
+    <string name="date_fri">27 Fri</string>
+    <string name="calendar_subtitle">Plan your quests by due date.</string>
+    <string name="no_quests_day">No quests scheduled for this day.</string>
+
+    <!-- Common UI & Dialogs -->
+    <string name="back">Back</string>
+    <string name="delete_confirm_title">Abandon Quest?</string>
+    <string name="delete_confirm_msg">Are you sure you want to abandon this quest? Progress will be lost.</string>
+    <string name="delete">Abandon</string>
+    <string name="task_updated">Quest updated successfully.</string>
+    <string name="task_deleted_toast">Quest abandoned.</string>
+    <string name="no_questions">No details for this quest yet.</string>
+    <string name="progress_label">Progress</string>
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low</string>
+    <string name="difficulty_med">Medium (3/5)</string>
+    <string name="mock_task_title">Complete Android Phase 2</string>
+    <string name="mock_task_desc">Design UI prototype, implement navigation, and update resources for TaskMaster app.</string>
+    <string name="mock_due_date">Oct 25, 5:00 PM</string>
+    <string name="subject">New Quest</string>
+    <string name="create">Add</string>
+    <string name="mock_2_of_5_sessions">2 / 5 sessions</string>
+    <string name="mock_task_history_item">Submit Research Paper</string>
+    <string name="mock_recurring_weekly">Weekly</string>
+    <string name="active_quests">ACTIVE QUESTS</string>
+    <string name="quick_nav">QUICK NAV</string>
+    <string name="quest_log">QUEST LOG</string>
+    <string name="profile">PROFILE</string>
+    <string name="guild_map">GUILD MAP</string>
+    <string name="config">CONFIG</string>
+    <string name="start_new_quest">START NEW QUEST</string>
+    <string name="error_saving_quest">Failed to sync quest data to the guild records.</string>
+</resources>

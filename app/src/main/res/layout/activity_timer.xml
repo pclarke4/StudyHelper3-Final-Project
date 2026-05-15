@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/theme_primary"
+            app:title="@string/focus_timer"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@drawable/ic_back"
+            app:navigationIconTint="@color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <!-- Active Quest Card: Styled as a Mission Brief -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TaskCard"
+                app:cardBackgroundColor="@color/quest_card_bg"
+                app:strokeColor="@color/theme_secondary"
+                app:strokeWidth="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CURRENT MISSION"
+                        android:textColor="@color/theme_secondary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.2"/>
+                    <TextView
+                        android:id="@+id/active_task_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_quest_selected"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/theme_primary"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:id="@+id/active_task_hint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/choose_quest_hint"
+                        android:textSize="12sp"
+                        android:textColor="@color/theme_text_secondary"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/xp_bonus_label"
+                        android:textColor="@color/theme_warning"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="8dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Mode Selection -->
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/mode_toggle_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:singleSelection="true"
+                app:selectionRequired="true"
+                app:checkedButton="@+id/btn_focus">
+                <Button
+                    android:id="@+id/btn_focus"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/focus_mode"/>
+                <Button
+                    android:id="@+id/btn_short_break"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/short_break"/>
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <!-- Large Timer Display -->
+            <FrameLayout
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="32dp">
+
+                <ProgressBar
+                    android:id="@+id/timer_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="1000"
+                    android:progress="1000"
+                    android:progressDrawable="@drawable/circular_progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/timer_display"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/timer_initial"
+                        android:textSize="72sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/theme_text_primary"/>
+                    <TextView
+                        android:id="@+id/timer_mode_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/focus_label"
+                        android:letterSpacing="0.2"
+                        android:textSize="16sp"
+                        android:textColor="@color/theme_primary"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Controls -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="48dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/reset_button"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/reset"
+                    android:layout_marginEnd="8dp"
+                    app:strokeColor="@color/theme_primary"
+                    android:textColor="@color/theme_primary"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/start_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/start"
+                    android:backgroundTint="@color/theme_primary"
+                    android:textColor="@color/white"
+                    app:icon="@drawable/ic_play"
+                    app:iconTint="@color/white" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/pause_button"
+                    style="@style/Widget.Material3.Button.TonalButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:text="@string/pause"
+                    android:visibility="gone"
+                    app:icon="@drawable/ic_pause" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/back_button_control"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/back"
+                    android:layout_marginStart="8dp"
+                    app:strokeColor="@color/theme_text_secondary"
+                    android:textColor="@color/theme_text_secondary"/>
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="@color/theme_tertiary"
+                app:cardElevation="0dp">
+                <TextView
+                    android:id="@+id/session_count_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+                    android:text="@string/sessions_completed_format"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    tools:text="Sessions Completed: 0"/>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
